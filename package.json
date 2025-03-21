@@ -1,0 +1,29 @@
+{
+  "name": "desktopapp-main",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build":"electron-builder",
+    "package": "npx electron-packager  . employeeRecord --platform=win32 --arch=x64 --out=dist --overwrite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "electron": "^35.0.3",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId":"com.codeYourBot.yourApp",
+    "productName": "employeeRecord",
+    "win":{
+      "target":"nsis"
+    },
+    "directories":{
+      "buildResources": "build"
+    }
+  }
+}

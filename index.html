@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desktop-App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <form onsubmit="handleFormSubmit(event);">
+    <h1>Employee Data Search</h1>
+    <div class="search-bar-container">
+      <div class="emp-id-input">
+        <label class="emp-id-label" for="emp-id">Enter the Emp number:</label>
+       <input type="text" id="emp-id">
+      </div>
+      <button type="submit">Search</button>
+      <button id="clear-btn" onclick="
+      form.reset();
+      ">Clear</button>
+    </div>
+
+    <div class="lower-input-container">
+      <div class="left-container">
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">First Name:</label>
+         <input class="readonly-input" type="text" id="first-name" value="" readonly>
+        </div>
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">Last Name:</label>
+         <input class="readonly-input" type="text" id="last-name" readonly>
+        </div>
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">Email id:</label>
+         <input class="readonly-input" type="text" id="email-id" readonly>
+        </div>
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">City:</label>
+         <input class="readonly-input" type="text" id="city" readonly>
+        </div>
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">Zip Code:</label>
+         <input class="readonly-input" type="text" id="zip-code"  readonly>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">Job Title:</label>
+         <input class="readonly-input" type="text" id="job-title"  readonly>
+        </div>
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">Department:</label>
+         <input class="readonly-input"  type="text" id="department"  readonly>
+        </div>
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">Manager:</label>
+         <input class="readonly-input" type="text" id="manager" readonly>
+        </div>
+        <div class="readonly-container">
+          <label class="emp-id-label" for="emp-id">State:</label>
+         <input class="readonly-input" type="text"id="state"  readonly>
+        </div>
+        
+      </div>
+    </div>
+  </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
