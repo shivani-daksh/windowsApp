@@ -16,45 +16,44 @@ body {
   padding: 40px;
   background-color: aliceblue;
 }
-h1{
+h1 {
   margin-bottom: 20px;
 }
-.search-bar-container{
-display: flex;
-gap: 20px;
-margin-bottom: 50px;
+.search-bar-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
 }
-.emp-id-label{
+.emp-id-label {
   font-size: 16px;
   font-weight: bold;
   margin-right: 5px;
 }
-#emp-id{
+#emp-id {
   font-size: 15px;
   font-weight: 700;
 }
-button{
+button {
   font-size: 16px;
   font-weight: bold;
   width: 100px;
 }
 
-input, button{
+input,
+button {
   padding: 2px 0px;
 }
-.lower-input-container{
+.lower-input-container {
   display: flex;
   gap: 40px;
 }
-.readonly-container{
+.readonly-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
- 
 }
-.readonly-input{
+.readonly-input {
   outline: none;
   font-size: 15px;
   padding-left: 5px;
 }
-

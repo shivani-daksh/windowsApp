@@ -64,9 +64,8 @@ const data = {
     city: 'Pittsburgh',
     state: 'PA',
     zipCode: '15201',
-  }
+  },
 };
-
 
 function handleFormSubmit(event) {
   event.preventDefault();
@@ -82,7 +81,6 @@ function handleFormSubmit(event) {
   const managerInput = document.getElementById('manager');
   const stateInput = document.getElementById('state');
 
-  
   firstNameInput.value = data[empIdInput].firstName;
   lastNameInput.value = data[empIdInput].lastName;
   emailIdInput.value = data[empIdInput].emailId;
@@ -92,5 +90,4 @@ function handleFormSubmit(event) {
   departmentInput.value = data[empIdInput].department;
   managerInput.value = data[empIdInput].manager;
   stateInput.value = data[empIdInput].state;
-
 }
